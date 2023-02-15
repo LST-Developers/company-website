@@ -1,11 +1,11 @@
 
 import './App.css';
+import NavBar from './components/navBar';
 import MainBanner from './components/MainBanner';
-
 function App() {
   return (
     <div className="App">
-      hola hijo de la gran
+      <NavBar />
       <MainBanner/>
     </div>
   );
