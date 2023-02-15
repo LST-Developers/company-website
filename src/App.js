@@ -1,12 +1,11 @@
 
-import './App.css';
-import NavBar from './components/navBar';
-import MainBanner from './components/MainBanner';
+import './App.scss';
+import './main.scss';
+import Home from './pages/Home';
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      <MainBanner/>
+      <Home/>
     </div>
   );
 }

@@ -1,0 +1,19 @@
+.mainContainer{
+    background-image: url("../../assets/img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 800px;
+    position: relative;
+
+    .titulo{
+        margin-top: 0px;
+        font-size: 40px;
+    }
+
+    .mainText{
+        padding-top: 300px;
+        color: white;
+        font-size: 20px;
+    }
+}

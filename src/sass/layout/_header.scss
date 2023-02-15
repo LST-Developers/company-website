@@ -1,0 +1,39 @@
+$color-primary : #0B0E3C;
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+
+    .logo{
+        padding-left: 20px;
+    }
+
+    .navBar{
+        list-style: none;
+        display: flex;
+        font-size: 20px;
+        
+        li{
+            padding-right: 20px;
+            a{
+                text-decoration: none;
+            }
+        }
+        
+    }
+
+    .userOption{
+        display: flex;
+        padding-right: 20px;
+
+        span{
+            padding-right: 5px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.buttons{
+    button{
+        padding: 14px 36px;
+        background: #0c5adb;
+        color: white;
+        margin: 0 9px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 4px;
+        border: none;
+    }
+
+    button:hover{
+        background: white;
+        color: #0c5adb;
+        border: none;
+    }
+}
