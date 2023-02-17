@@ -5,15 +5,43 @@
     background-position: center center;
     height: 800px;
     position: relative;
+    text-align: center;
 
     .titulo{
-        margin-top: 0px;
-        font-size: 40px;
+        
+        font-size: 1.5em;
+        //margin-bottom: 1em;
     }
 
     .mainText{
         padding-top: 300px;
         color: white;
         font-size: 20px;
+        .type-wrap{
+            font-size: 3em;
+            font-weight: 600;
+            margin: 0.5em 0 0.3em 0;
+        }
+        /*
+        .typed-cursor{
+            opacity: 1;
+            animation: typedjsBlink 0.7s infinite;
+            -webkit-animation: typedjsBlink 0.7s infinite;
+            animation: typedjsBlink 0.7s infinite;
+          }
+          @keyframes typedjsBlink{
+            50% { opacity: 0.0; }
+          }
+          @-webkit-keyframes typedjsBlink{
+            0% { opacity: 1; }
+            50% { opacity: 0.0; }
+            100% { opacity: 1; }
+          }
+          .typed-fade-out{
+            opacity: 0;
+            transition: opacity .25s;
+            -webkit-animation: 0;
+            animation: 0;
+          }*/
     }
 }

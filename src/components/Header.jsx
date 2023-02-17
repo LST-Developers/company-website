@@ -34,7 +34,7 @@ function Header() {
       </ul>
       <div class="userOption">
         <span class="material-icons-outlined">account_circle</span>
-        <span>Nombre de Usuario</span>
+        <span className='userName'>Nombre de Usuario</span>
         <span class="material-icons-outlined">logout</span>
       </div>         
     </div>

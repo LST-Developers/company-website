@@ -12,13 +12,14 @@ $color-primary : #0B0E3C;
 
     .logo{
         padding-left: 20px;
+        margin-left: 3em;
     }
 
     .navBar{
         list-style: none;
         display: flex;
-        font-size: 20px;
-        
+        font-size: 1.1em;
+        align-items: center;
         li{
             padding-right: 20px;
             a{
@@ -30,10 +31,13 @@ $color-primary : #0B0E3C;
 
     .userOption{
         display: flex;
-        padding-right: 20px;
-
+        padding-right: 1em;
+        align-items: center;
         span{
             padding-right: 5px;
+        }
+        .userName{
+            font-size: 0.9em;
         }
     }
 }

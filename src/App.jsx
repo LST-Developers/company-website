@@ -1,6 +1,4 @@
 
-import './App.scss';
-import './main.scss';
 import Home from './pages/Home';
 function App() {
   return (
