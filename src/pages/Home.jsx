@@ -1,4 +1,5 @@
 import React from 'react';
+import CardReview from '../components/CardReview';
 import NavBar from '../components/Header';
 import MainBanner from '../components/MainBanner';
 
@@ -7,6 +8,7 @@ function Home() {
     <div>
         <NavBar />
         <MainBanner/>
+        <CardReview />
     </div>
   )
 }

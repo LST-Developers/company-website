@@ -1,18 +1,18 @@
-import React from "react";
-import { useEffect, useRef } from "react";
+import { React, useEffect, useRef} from "react";
 import Typed from "typed.js";
+
 function MainBanner() {
 
-    const el = React.useRef(null);
+    const el = useRef(null);
     // Create reference to store the Typed instance itself
-    const typed = React.useRef(null);
+    const typed = useRef(null);
 
     useEffect(() => {
         const options = {
             strings: [
                 'Empresa de Desarrollo Web',
                 'Comercio Electronico',
-                'Paginas web a la medida de tu empresa'
+                'Paginas web a la medida'
             ],
             typeSpeed: 40,
             backSpeed: 50,
