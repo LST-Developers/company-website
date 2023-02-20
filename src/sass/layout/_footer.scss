@@ -5,8 +5,46 @@ footer{
     align-items: center;
     background-color: $colorprincipal   ;
     color: white;
+
+    hr{
+        width: 45%;
+        margin-top: 40px;
+    }
+
+    .infoContact{
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        text-align: left;
+        margin-top: 40px;
+        font-size: 15px;
+        
+        .findUs{
+            display: flex;
+            align-items: center;
+        }
+        
+        .findUs span{
+            margin-right: 10px;
+            font-size: 40px;
+        }
+        
+    }
+    
+    .infoUseful{
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        text-align: left;
+        margin-top: 40px;
+    }
+
+    .infoLegal{
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        text-align: left;
+        margin-top: 40px;
+    }
 }
 
-.infoContact{
-    display: flex;
-}
