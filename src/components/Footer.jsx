@@ -16,14 +16,14 @@ function Footer() {
                 <p>calle #22-22</p>
               </div>
             </div>
-            <div class="callUs">
+            <div class="findUs">
               <span class="material-icons-outlined">phone_enabled</span>
               <div>
                 <h4>Contactanos</h4>
                 <p>+57 - 3232233233</p>
               </div>
             </div>
-            <div class="mailUs">
+            <div class="findUs">
               <span class="material-icons-outlined">mail</span>
               <div>
                 <h4>Correo</h4>
@@ -31,11 +31,12 @@ function Footer() {
               </div>
             </div>            
           </div>
+          <hr/>
           <div class="infoUseful">
             <div class="infogeneral">
               <div class="logosRedes">
                 <img src="https://thumbs.dreamstime.com/b/letter-lst-simple-monogram-logo-icon-design-initial-vector-illustration-203570670.jpg" alt="logo del equipo" width="50" height="50" className='logo'/>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum saepe eveniet rem magni iure!</p>
+                <p>Lorem ipsum dolor sit, amet.!</p>
                 <p>Síguenos</p>
                 <div>
                   <a href="DiderccionDeFacebookDeLaEmpresa">
