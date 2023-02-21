@@ -15,18 +15,18 @@ function Header() {
         setColor('white');
       }
     }
-  
+
     window.addEventListener('scroll', handleScroll);
-  
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  
+
   return (
-    <div className='header' style={{"background-color": headerColor, "color":color}}>
+    <div className='header' style={{"backgroundColor": headerColor, "color":color}}>
       <a href="#"><img src="https://thumbs.dreamstime.com/b/letter-lst-simple-monogram-logo-icon-design-initial-vector-illustration-203570670.jpg" alt="logo del equipo" width="50" height="50" className='logo'/></a>
-      <ul class="navBar"> 
+      <ul class="navBar">
         {routes.map((route) => {
           return <li><a href="#" style={{'color' : color}}>{route}</a></li>
         })}
@@ -36,7 +36,7 @@ function Header() {
         <span class="material-icons-outlined">account_circle</span>
         <span className='userName'>Nombre de Usuario</span>
         <span class="material-icons-outlined">logout</span>
-      </div>         
+      </div>
     </div>
   );
 }
