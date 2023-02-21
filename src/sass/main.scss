@@ -6,11 +6,13 @@
 
 @import 
     './components/mainBanner',
-    './components/_buttons';
+    './components/_buttons',
+    './components/_cardReview';
 
 @import
     './layout/_header',
-    './layout/_footer';
+    './layout/_footer',
+    './layout/_sliderReviews';
 
 @import
     './pages/_home';

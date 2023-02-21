@@ -1,0 +1,48 @@
+.card{
+    max-width: 25em;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #e5e5e5;
+    img{
+        border-radius: 50%;
+        width: 6em;
+        height: 6em;
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        color: #727171;
+    }
+
+    .star-rating{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        
+        .star{
+            display: inline-block;
+            color : #c5c5c5;
+            cursor: pointer;
+        }
+
+        .filled{
+            color: blue;
+        }
+    }
+
+    h3{
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    h4{
+        font-size: 1rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        color: blue;
+    }
+}
