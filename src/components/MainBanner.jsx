@@ -3,9 +3,9 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 function MainBanner() {
 
-    const el = React.useRef(null);
+    const el = useRef(null);
     // Create reference to store the Typed instance itself
-    const typed = React.useRef(null);
+    const typed = useRef(null);
 
     useEffect(() => {
         const options = {
