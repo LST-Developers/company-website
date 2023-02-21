@@ -1,6 +1,7 @@
 $color-primary : #0B0E3C;
 
 .header{
+    font-family: $mainFont;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -26,7 +27,6 @@ $color-primary : #0B0E3C;
                 text-decoration: none;
             }
         }
-        
     }
 
     .userOption{

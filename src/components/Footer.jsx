@@ -13,7 +13,7 @@ function Footer() {
                             location_on
                         </span>
                         <div>
-                            <h4>Encuentranos</h4>
+                            <h4>Encuéntranos</h4>
                             <p>calle #22-22</p>
                         </div>
                     </div>
@@ -22,7 +22,7 @@ function Footer() {
                             phone_enabled
                         </span>
                         <div>
-                            <h4>Contactanos</h4>
+                            <h4>Contáctanos</h4>
                             <p>+57 - 323-223-2323</p>
                         </div>
                     </div>

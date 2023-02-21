@@ -1,4 +1,4 @@
-.mainContainer{
+.mainContainer {
     background-image: url("../../assets/img/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,41 +7,20 @@
     position: relative;
     text-align: center;
 
-    .titulo{
-        
+    .titulo {
         font-size: 1.5em;
         //margin-bottom: 1em;
     }
 
-    .mainText{
+    .mainText {
         padding-top: 300px;
         color: white;
         font-size: 20px;
-        .type-wrap{
+		font-family: $mainFont;
+        .type-wrap {
             font-size: 3em;
             font-weight: 600;
             margin: 0.5em 0 0.3em 0;
         }
-        /*
-        .typed-cursor{
-            opacity: 1;
-            animation: typedjsBlink 0.7s infinite;
-            -webkit-animation: typedjsBlink 0.7s infinite;
-            animation: typedjsBlink 0.7s infinite;
-          }
-          @keyframes typedjsBlink{
-            50% { opacity: 0.0; }
-          }
-          @-webkit-keyframes typedjsBlink{
-            0% { opacity: 1; }
-            50% { opacity: 0.0; }
-            100% { opacity: 1; }
-          }
-          .typed-fade-out{
-            opacity: 0;
-            transition: opacity .25s;
-            -webkit-animation: 0;
-            animation: 0;
-          }*/
     }
 }

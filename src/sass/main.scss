@@ -7,12 +7,12 @@
 @import 
     './components/mainBanner',
     './components/_buttons',
-    './components/_cardReview';
+    './components/_cardReview',
+    './components/_sliderReviews';
 
 @import
     './layout/_header',
-    './layout/_footer',
-    './layout/_sliderReviews';
+    './layout/_footer';
 
 @import
     './pages/_home';
