@@ -24,6 +24,7 @@ function Footer() {
                         <div>
                             <h4>Contáctanos</h4>
                             <p>+57 - 323-223-2323</p>
+                            <p>+57 - 323-223-2323</p>
                         </div>
                     </div>
                     <div className="findUs">
@@ -48,10 +49,8 @@ function Footer() {
                             <p>
                                 Lorem ipsum dolor sit amet consectetur
                                 adipisicing elit. Cumque animi nemo aspernatur
-                                beatae recusandae temporibus blanditiis? Cum
-                                alias reiciendis quisquam.
                             </p>
-                            <p>Síguenos</p>
+                            <h4>Síguenos</h4>
                             <div className="iconRedes">
                                 <a
                                     href="DiderccionDeFacebookDeLaEmpresa"
@@ -69,26 +68,27 @@ function Footer() {
                         </div>
                     </div>
                     <div className="usefulLinks">
-                        <p>Enlaces de interés</p>
+                        <h4>Enlaces de interés</h4>
                         <hr className="shortLinea" />
                         <ul>
                             <li>
-                                <a href="#">Inicio</a>
+                                <a className="linksUtil" href="#">Inicio</a>
                             </li>
                             <li>
-                                <a href="#">Servicios</a>
+                                <a className="linksUtil" href="#">Servicios</a>
                             </li>
                             <li>
-                                <a href="#">Contactanos</a>
+                                <a className="linksUtil" href="#">Contactanos</a>
                             </li>
                             <li>
-                                <a href="#">Acerca De</a>
+                                <a className="linksUtil" href="#">Acerca De</a>
                             </li>
                         </ul>
                     </div>
                     <div className="subscribe">
-                        <p>Subscríbete</p>
+                        <h4>Subscríbete</h4>
                         <hr className="shortLinea" />
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, deleniti!</p>
                         <div className="containerEmail">
                             <input
                                 type="email"
@@ -96,9 +96,10 @@ function Footer() {
                                 id="email"
                                 placeholder="Ingrese su correo electrónico"
                             />
-                            <span className="material-icons-outlined">
+                            <a href=""><span className="material-icons-outlined">
                                 send
-                            </span>
+                            </span></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -107,9 +108,9 @@ function Footer() {
                         Copyright © 2023 My Website CV y Robate algo para que
                         veas
                     </p>
-                    <a href="#">Política</a>
-                    <p></p>
-                    <a href="#">Inicio</a>
+                    <a className="linksUtil" href="#">Política</a>
+                    
+                    <a className="linksUtil" href="#">Inicio</a>
                 </div>
             </footer>
         </div>
