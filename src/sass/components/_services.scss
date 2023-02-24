@@ -1,0 +1,12 @@
+.containerServices{
+    position: relative;
+    
+   .video{
+        pointer-events: none;
+        //position: absolute;
+        height: 710px;
+    }
+    .content{
+        display: none;
+    }
+}

@@ -41,22 +41,22 @@ function Header() {
                     className="logo"
                 />
             </a>
-            <ul class="navBar">
-                {routes.map((route) => {
+            <ul className="navBar">
+                {routes.map((route, index) => {
                     return (
-                        <li>
+                        <li key={index}>
                             <a href="#" style={{ color: color }}>
                                 {route}
                             </a>
                         </li>
                     );
                 })}
-                <span class="material-icons-outlined">search</span>
+                <span className="material-icons-outlined">search</span>
             </ul>
-            <div class="userOption">
-                <span class="material-icons-outlined">account_circle</span>
+            <div className="userOption">
+                <span className="material-icons-outlined">account_circle</span>
                 <span className="userName">Nombre de Usuario</span>
-                <span class="material-icons-outlined">logout</span>
+                <span className="material-icons-outlined">logout</span>
             </div>
         </div>
     );
