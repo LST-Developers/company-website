@@ -1,43 +1,101 @@
 $color-primary : #0B0E3C;
 
-.header{
-    font-family: $mainFont;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 9999;
-
-    .logo{
-        padding-left: 20px;
-        margin-left: 3em;
-    }
-
-    .navBar{
-        list-style: none;
+@media (min-width: 769px) {
+    .header{
+        font-family: $mainFont;
         display: flex;
-        font-size: 1.1em;
         align-items: center;
-        li{
-            padding-right: 20px;
-            a{
-                text-decoration: none;
+        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 9999;
+
+        .logo{
+            padding-left: 20px;
+            margin-left: 3em;
+        }
+
+        .navBar{
+            list-style: none;
+            display: flex;
+            font-size: 1.1em;
+            align-items: center;
+            li{
+                padding-right: 20px;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .toggle{
+            display: none;
+        }
+
+        .userOption{
+            display: flex;
+            padding-right: 1em;
+            align-items: center;
+            span{
+                padding-right: 5px;
+            }
+            .userName{
+                font-size: 0.9em;
             }
         }
     }
+}
 
-    .userOption{
+@media (min-width:480px) and (max-width: 768px) {
+
+    .header{
+        background: white;
+        font-family: $mainFont;
         display: flex;
-        padding-right: 1em;
         align-items: center;
-        span{
-            padding-right: 5px;
+        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 9999;
+
+        .logo{
+            margin-left: 1em;
         }
-        .userName{
-            font-size: 0.9em;
+
+        .navBar{
+            position: absolute;
+            top: 50px;
+            left: 0px;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            transition: 0.3s ease all;
+            list-style: none;
+            font-size: 1.1em;
+            display: none;
+
+            li{
+                margin: 1em;
+                a{
+                    text-decoration: none;
+                }
+            }
+
+        }
+
+        .open{
+            display: block;
+        }
+
+        .userOption{
+            display: none;
         }
     }
+
 }
