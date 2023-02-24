@@ -12,7 +12,7 @@ function MainBanner() {
             strings: [
                 'Empresa de Desarrollo Web',
                 'Comercio Electronico',
-                'Paginas web a la medida de tu empresa'
+                'Paginas web a la medida'
             ],
             typeSpeed: 40,
             backSpeed: 50,

@@ -4,21 +4,34 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    
+
+    h4{
+        color: white; 
+        font-size: 20px;
+    }
+    p{
+        font-size: 10px;
+        color: #8e8d8d;
+    }
 
     .longLine {
-        width: 45%;
+        width: 65%;
         margin-top: 40px;
-        border-color: #e44b0eed;
+        border-color: #0c5adb;
     }
 
     .infoContact {
         display: flex;
         justify-content: space-between;
-        width: 45%;
+        width: 60%;
         text-align: left;
-        margin-top: 40px;
+        margin-top: 20px;
         font-size: 15px;
+
+        p{
+            margin-top: 5px;
+        }
 
         .findUs {
             display: flex;
@@ -27,27 +40,29 @@ footer {
 
         .findUs span {
             margin-right: 10px;
-            font-size: 40px;
-            color: #e44b0eed;
+            font-size: 30px;
+            color: #0c5adb;
         }
     }
 
     .infoUseful {
         display: flex;
         justify-content: space-between;
-        width: 45%;
+        width: 60%;
         text-align: left;
-        margin-top: 40px;
+        margin-top: 20px;
 
 
         .subscribe{
+            width: 30%;
             .containerEmail{
                 display: flex;
                 align-items: center;
                 margin-top: 10px;
 
                 span{
-                    color: #e44b0eed;
+                    color: #0c5adb;
+                    font-size: 32px;
                 }
             }
             
@@ -58,12 +73,13 @@ footer {
         }
 
         .logosRedes {
-            width: 180%;
+            width: 100%;
             p {
                 margin-top: 30px;
+                margin-bottom: 10px;
             }
             .iconRedes {
-                font-size: 48px;
+                font-size: 25px;
                 margin-top: 20px;
 
                 a {
@@ -85,7 +101,9 @@ footer {
             text-align: left;
             margin: 0;
             margin-top: 10px;
-            border-color: #e44b0eed;
+            margin-bottom: 25px;
+           //border-color: #e44b0eed;
+            border-color: #0c5adb;
         }
 
         #email {
@@ -94,13 +112,28 @@ footer {
             padding: 10px;
             border: none;
         }
+
+        .usefulLinks{
+            .linksUtil{
+                text-decoration: none;
+                color: white;
+            }
+
+        }
+        
     }
 
     .infoLegal {
         display: flex;
         justify-content: space-between;
-        width: 45%;
+        width: 60%;
         text-align: left;
-        margin-top: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+        .linksUtil{
+            text-decoration: none;
+            color: white;
+        }
     }
 }
