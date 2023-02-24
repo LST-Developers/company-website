@@ -54,9 +54,9 @@ function Header() {
                         className="logo"
                     />
                     <ul className={`navBar ${isOpen ? "open" : ""}`}>
-                        {routes.map((route) => {
+                        {routes.map((route,index) => {
                             return (
-                                <li>
+                                <li key={index}>
                                     <a href="#" style={{ color: "black" }}>
                                         {route}
                                     </a>
@@ -65,17 +65,17 @@ function Header() {
                         })}
                     </ul>
                     <div className="toggle" onClick={() => setIsOpen(!isOpen)}>
-                        <span class="material-icons-outlined">
+                        <span className=""s="material-icons-outlined">
                             {!isOpen ? "menu" : "close"}
                         </span>
                     </div>
-                    <div class="userOption">
-                        <span class="material-icons-outlined">search</span>
-                        <span class="material-icons-outlined">
+                    <div className="userOption">
+                        <span className="material-icons-outlined">search</span>
+                        <span className="material-icons-outlined">
                             account_circle
                         </span>
                         <span className="userName">Nombre de Usuario</span>
-                        <span class="material-icons-outlined">logout</span>
+                        <span className="material-icons-outlined">logout</span>
                     </div>
                 </div>
             ) : (
@@ -90,8 +90,8 @@ function Header() {
                         height="50"
                         className="logo"
                     />
-                    <ul class={`navBar ${isOpen ? "open" : ""}`}>
-                        {routes.map((route) => {
+                    <ul className={`navBar ${isOpen ? "open" : ""}`}>
+                        {routes.map((route,index) => {
                             return (
                                 <li key={index}>
                                     <a href="#" style={{ color: color }}>
@@ -102,13 +102,13 @@ function Header() {
                         })}
                     </ul>
                     <div className="toggle" onClick={() => setIsOpen(!isOpen)}>
-                        <span class="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             {!isOpen ? "menu" : "close"}
                         </span>
                     </div>
-                    <div class="userOption">
-                        <span class="material-icons-outlined">search</span>
-                        <span class="material-icons-outlined">
+                    <div className="userOption">
+                        <span className="material-icons-outlined">search</span>
+                        <span className="material-icons-outlined">
                             account_circle
                         </span>
                         <span className="userName">Nombre de Usuario</span>
