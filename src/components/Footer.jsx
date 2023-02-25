@@ -5,8 +5,7 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
     return (
-        <div>
-            <footer className="containerFooter">
+        <footer className="containerFooter">
                 <div className="infoContact">
                     <div className="findUs">
                         <span className="material-icons-outlined">
@@ -69,7 +68,7 @@ function Footer() {
                     </div>
                     <div className="usefulLinks">
                         <h4>Enlaces de interés</h4>
-                        <hr className="shortLinea" />
+                        <hr className="shortLine" />
                         <ul>
                             <li>
                                 <a className="linksUtil" href="#">Inicio</a>
@@ -87,7 +86,7 @@ function Footer() {
                     </div>
                     <div className="subscribe">
                         <h4>Subscríbete</h4>
-                        <hr className="shortLinea" />
+                        <hr className="shortLine" />
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, deleniti!</p>
                         <div className="containerEmail">
                             <input
@@ -112,8 +111,7 @@ function Footer() {
                     
                     <a className="linksUtil" href="#">Inicio</a>
                 </div>
-            </footer>
-        </div>
+        </footer>
     );
 }
 

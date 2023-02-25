@@ -8,29 +8,28 @@ footer {
 
     h4{
         color: white; 
-        font-size: 20px;
+        font-size: 1rem;
     }
     p{
-        font-size: 10px;
+        font-size: 0.8rem;
         color: #8e8d8d;
     }
 
     .longLine {
-        width: 65%;
-        margin-top: 40px;
+        width: 71%;
+        margin-top: 1rem;
         border-color: #0c5adb;
     }
 
     .infoContact {
         display: flex;
         justify-content: space-between;
-        width: 60%;
+        width: 70%;
         text-align: left;
-        margin-top: 20px;
-        font-size: 15px;
+        margin-top: 1%;
 
         p{
-            margin-top: 5px;
+            margin-top: 4%;
         }
 
         .findUs {
@@ -39,8 +38,8 @@ footer {
         }
 
         .findUs span {
-            margin-right: 10px;
-            font-size: 30px;
+            margin-right: 1rem;
+            font-size: 2rem;
             color: #0c5adb;
         }
     }
@@ -48,9 +47,9 @@ footer {
     .infoUseful {
         display: flex;
         justify-content: space-between;
-        width: 60%;
+        width: 70%;
         text-align: left;
-        margin-top: 20px;
+        margin-top: 1%;
 
 
         .subscribe{
@@ -58,11 +57,11 @@ footer {
             .containerEmail{
                 display: flex;
                 align-items: center;
-                margin-top: 10px;
+                margin-top: 2%;
 
                 span{
                     color: #0c5adb;
-                    font-size: 32px;
+                    font-size: 2rem;
                 }
             }
             
@@ -75,15 +74,15 @@ footer {
         .logosRedes {
             width: 100%;
             p {
-                margin-top: 30px;
-                margin-bottom: 10px;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
             }
             .iconRedes {
-                font-size: 25px;
-                margin-top: 20px;
+                font-size: 2rem;
+                margin-top: 1rem;
 
                 a {
-                    margin-right: 10px;
+                    margin-right: 1rem;
                 }
 
                 .iconFace {
@@ -96,12 +95,12 @@ footer {
             }
         }
 
-        .shortLinea {
+        .shortLine {
             width: 40%;
             text-align: left;
             margin: 0;
-            margin-top: 10px;
-            margin-bottom: 25px;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
            //border-color: #e44b0eed;
             border-color: #0c5adb;
         }
@@ -109,8 +108,9 @@ footer {
         #email {
             background: linear-gradient(to right, #404040, #404040, #404040);
             color: white;
-            padding: 10px;
+            padding: 0.8rem;
             border: none;
+            width: 65%;
         }
 
         .usefulLinks{
@@ -126,10 +126,10 @@ footer {
     .infoLegal {
         display: flex;
         justify-content: space-between;
-        width: 60%;
+        width: 70%;
         text-align: left;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 1%;
+        margin-bottom: 1%;
         
         .linksUtil{
             text-decoration: none;
