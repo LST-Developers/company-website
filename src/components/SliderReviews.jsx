@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import CardReview from "./CardReview";
 
 // Import Swiper React components
@@ -11,6 +11,9 @@ import "swiper/css";
 import { Autoplay } from "swiper";
 
 function SliderReviews() {
+
+    const [slidesPerView , setSlidesPerView] = useState(0);
+
     const reviews = [
         {
             imageUrl: require("../assets/img/jenifer.jpeg"),
@@ -62,12 +65,31 @@ function SliderReviews() {
         },
     ];
 
+    useEffect(() => {
+        const handleResize = () => {
+            if(window.innerWidth <= 768 && window.innerWidth > 433){
+                setSlidesPerView(2);
+            }else if(window.innerWidth <= 433){
+                setSlidesPerView(1);
+            }else if(window.innerWidth > 768){
+                setSlidesPerView(3);
+            }
+        };
+        handleResize();
+
+        window.addEventListener("resize", handleResize);
+
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+
     return (
         <div className="slider">
             <h5>TESTIMONIOS</h5>
             <h3>OPINIONES DE CLIENTES FELICES</h3>
             <Swiper
-                slidesPerView={3}
+                slidesPerView={slidesPerView}
                 spaceBetween={30}
                 loop={true}
                 autoplay={{

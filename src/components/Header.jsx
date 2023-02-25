@@ -65,7 +65,7 @@ function Header() {
                         })}
                     </ul>
                     <div className="toggle" onClick={() => setIsOpen(!isOpen)}>
-                        <span className=""s="material-icons-outlined">
+                        <span className="material-icons-outlined">
                             {!isOpen ? "menu" : "close"}
                         </span>
                     </div>
