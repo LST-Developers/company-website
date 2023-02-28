@@ -11,8 +11,7 @@ import "swiper/css";
 import { Autoplay } from "swiper";
 
 function SliderReviews() {
-
-    const [slidesPerView , setSlidesPerView] = useState(0);
+    const [slidesPerView, setSlidesPerView] = useState(0);
 
     const reviews = [
         {
@@ -67,11 +66,11 @@ function SliderReviews() {
 
     useEffect(() => {
         const handleResize = () => {
-            if(window.innerWidth <= 768 && window.innerWidth > 433){
+            if (window.innerWidth <= 768 && window.innerWidth > 433) {
                 setSlidesPerView(2);
-            }else if(window.innerWidth <= 433){
+            } else if (window.innerWidth <= 433) {
                 setSlidesPerView(1);
-            }else if(window.innerWidth > 768){
+            } else if (window.innerWidth > 768) {
                 setSlidesPerView(3);
             }
         };
@@ -86,8 +85,11 @@ function SliderReviews() {
 
     return (
         <div className="slider">
-            <h5>TESTIMONIOS</h5>
-            <h3>OPINIONES DE CLIENTES FELICES</h3>
+            <div className="title">
+                <h3>TESTIMONIOS</h3>
+                <h5>OPINIONES DE CLIENTES FELICES</h5>
+            </div>
+
             <Swiper
                 slidesPerView={slidesPerView}
                 spaceBetween={30}

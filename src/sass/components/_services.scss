@@ -24,6 +24,25 @@
     }
 
     .content {
-        display: none;
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        margin-top: 4em;
+        h2{
+            font-size: $sectionTitleSize;
+            font-weight:$titleFontWeight;
+        }
+        h5{
+            font-size: $sectionSubTitleSize;
+            margin: 1em 0;
+            font-weight: $sectionSubTitleWeight;
+        }
     }
 }
