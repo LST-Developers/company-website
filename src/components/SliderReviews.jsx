@@ -67,9 +67,9 @@ function SliderReviews() {
 
     useEffect(() => {
         const handleResize = () => {
-            if(window.innerWidth <= 768 && window.innerWidth > 433){
+            if(window.innerWidth <= 768 && window.innerWidth > 550){
                 setSlidesPerView(2);
-            }else if(window.innerWidth <= 433){
+            }else if(window.innerWidth <= 550){
                 setSlidesPerView(1);
             }else if(window.innerWidth > 768){
                 setSlidesPerView(3);

@@ -45,7 +45,9 @@ function Header() {
     return (
         <div>
             {isMobile ? (
-                <div className="header">
+                <div className="header"
+                    style={{ backgroundColor: headerColor, color: color }}
+                >
                     <img
                         src="https://thumbs.dreamstime.com/b/letter-lst-simple-monogram-logo-icon-design-initial-vector-illustration-203570670.jpg"
                         alt="logo del equipo"
@@ -71,11 +73,6 @@ function Header() {
                     </div>
                     <div className="userOption">
                         <span className="material-icons-outlined">search</span>
-                        <span className="material-icons-outlined">
-                            account_circle
-                        </span>
-                        <span className="userName">Nombre de Usuario</span>
-                        <span className="material-icons-outlined">logout</span>
                     </div>
                 </div>
             ) : (
@@ -108,11 +105,6 @@ function Header() {
                     </div>
                     <div className="userOption">
                         <span className="material-icons-outlined">search</span>
-                        <span className="material-icons-outlined">
-                            account_circle
-                        </span>
-                        <span className="userName">Nombre de Usuario</span>
-                        <span className="material-icons-outlined">logout</span>
                     </div>
                 </div>
             )}
