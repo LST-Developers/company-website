@@ -1,9 +1,6 @@
-$colorprincipal: black;
+/* $colorprincipal: black; */
 footer {
-    /* background: linear-gradient(to right, black, #343434, #000000); */
-    /* background: linear-gradient(to right, #262626, #000000, #262626); */
-    /* background: linear-gradient(to right, rgb(234, 234, 234), rgb(198, 198, 198), rgb(234, 234, 234)); */
-    background: linear-gradient(to right, #000814,#000835, #000835, #000835,#000814);
+    background: linear-gradient(to right, #000814,#00031C, #000835, #00031C,#000814);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,7 +18,6 @@ footer {
 
     h4{
         color: white;
-        /* color: $colorprincipal;  */
         font-size: 1rem;
     }
     p{
@@ -48,7 +44,7 @@ footer {
         .findUs span {
             margin-right: 1rem;
             font-size: 2rem;
-            color: #0c5adb;
+            color: #0400ff;
         }
     }
 
@@ -68,7 +64,7 @@ footer {
                 margin-top: 2%;
 
                 span{
-                    color: #0c5adb;
+                    color: #0400ff;
                     font-size: 2rem;
                 }
             }
@@ -94,7 +90,7 @@ footer {
                 }
 
                 .iconFace {
-                    color: #0c5adb;
+                    color: #0400ff;
                 }
 
                 .iconInstagram {
@@ -110,7 +106,7 @@ footer {
             margin-top: 1rem;
             margin-bottom: 1rem;
            //border-color: #e44b0eed;
-            border-color: #0c5adb;
+            border-color: #0400ff;
         }
 
         #email {
@@ -137,6 +133,40 @@ footer {
         width: 100%;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .infoContact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 2em;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .longLine {
+        /* margin-left: auto;
+        width: 10%; */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .infoUseful {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .infoLegal {
+        flex-direction: column;
         text-align: center;
     }
 }

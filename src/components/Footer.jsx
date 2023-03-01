@@ -24,14 +24,13 @@ function Footer() {
                         <div>
                             <h4>Contáctanos</h4>
                             <p>+57 - 323-223-2323</p>
-                            <p>+57 - 323-223-2323</p>
                         </div>
                     </div>
                     <div className="findUs">
                         <span className="material-icons-outlined">mail</span>
                         <div>
                             <h4>Correo</h4>
-                            <p>usuario@loquesea</p>
+                            <p>usuario@ejemplo.com</p>
                         </div>
                     </div>
                 </div>
@@ -46,10 +45,7 @@ function Footer() {
                                 height="50"
                                 className="logo"
                             />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Cumque animi nemo aspernatur
-                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque animi nemo aspernatur</p>
                             <h4>Síguenos</h4>
                             <div className="iconRedes">
                                 <a
