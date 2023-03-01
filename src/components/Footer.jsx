@@ -5,7 +5,8 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
     return (
-        <footer className="containerFooter">
+        <footer >
+            <div className="containerFooter">
                 <div className="infoContact">
                     <div className="findUs">
                         <span className="material-icons-outlined">
@@ -72,13 +73,13 @@ function Footer() {
                         <ul>
                             <li>
                                 <a className="linksUtil" href="#">Inicio</a>
-                            </li>
+                            </li><br />
                             <li>
                                 <a className="linksUtil" href="#">Servicios</a>
-                            </li>
+                            </li><br />
                             <li>
                                 <a className="linksUtil" href="#">Contactanos</a>
-                            </li>
+                            </li><br />
                             <li>
                                 <a className="linksUtil" href="#">Acerca De</a>
                             </li>
@@ -87,7 +88,7 @@ function Footer() {
                     <div className="subscribe">
                         <h4>Subscríbete</h4>
                         <hr className="shortLine" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, deleniti!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.!</p>
                         <div className="containerEmail">
                             <input
                                 type="email"
@@ -98,18 +99,12 @@ function Footer() {
                             <a href=""><span className="material-icons-outlined">
                                 send
                             </span></a>
-                            
                         </div>
                     </div>
                 </div>
                 <div className="infoLegal">
-                    <p>
-                        Copyright © 2023 My Website CV y Robate algo para que
-                        veas
-                    </p>
-                    <a className="linksUtil" href="#">Política</a>
-                    
-                    <a className="linksUtil" href="#">Inicio</a>
+                    <p>Copyright © 2023 My Website Todos los derechos reservados. Hecho en [Santa Marta, Colombia].</p>
+                </div>
                 </div>
         </footer>
     );

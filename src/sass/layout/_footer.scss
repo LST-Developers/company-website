@@ -1,40 +1,48 @@
 $colorprincipal: black;
 footer {
-    background: linear-gradient(to right, black, #343434, #000000);
+    /* background: linear-gradient(to right, black, #343434, #000000); */
+    /* background: linear-gradient(to right, #262626, #000000, #262626); */
+    /* background: linear-gradient(to right, rgb(234, 234, 234), rgb(198, 198, 198), rgb(234, 234, 234)); */
+    background: linear-gradient(to right, #000814,#000835, #000835, #000835,#000814);
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .containerFooter{
+        width: 70%;
+    }
     
+    .longLine {
+        width: 96%;
+        margin-top: 1rem;
+        border-color: #8e8d8d;
+        margin-left: initial;
+    }
 
     h4{
-        color: white; 
+        color: white;
+        /* color: $colorprincipal;  */
         font-size: 1rem;
     }
     p{
         font-size: 0.8rem;
         color: #8e8d8d;
     }
-
-    .longLine {
-        width: 71%;
-        margin-top: 1rem;
-        border-color: #0c5adb;
-    }
-
     .infoContact {
         display: flex;
         justify-content: space-between;
-        width: 70%;
+        width: 100%;
         text-align: left;
-        margin-top: 1%;
+        margin-top: 1rem;
 
         p{
-            margin-top: 4%;
+            margin-top: 0.5rem;
         }
 
         .findUs {
             display: flex;
             align-items: center;
+            width: 40%;
         }
 
         .findUs span {
@@ -47,13 +55,13 @@ footer {
     .infoUseful {
         display: flex;
         justify-content: space-between;
-        width: 70%;
+        width: 100%;
         text-align: left;
-        margin-top: 1%;
+        margin-top: 1rem;
 
 
         .subscribe{
-            width: 30%;
+            width: 40%;
             .containerEmail{
                 display: flex;
                 align-items: center;
@@ -68,11 +76,11 @@ footer {
         }
 
         .infogeneral {
-            width: 20%;
+            width: 40%;
         }
 
         .logosRedes {
-            width: 100%;
+            width: 60%;
             p {
                 margin-top: 1rem;
                 margin-bottom: 1rem;
@@ -96,7 +104,7 @@ footer {
         }
 
         .shortLine {
-            width: 40%;
+            width: 10%;
             text-align: left;
             margin: 0;
             margin-top: 1rem;
@@ -114,6 +122,8 @@ footer {
         }
 
         .usefulLinks{
+            width: 40%;
+
             .linksUtil{
                 text-decoration: none;
                 color: white;
@@ -124,16 +134,9 @@ footer {
     }
 
     .infoLegal {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        text-align: left;
-        margin-top: 1%;
-        margin-bottom: 1%;
-        
-        .linksUtil{
-            text-decoration: none;
-            color: white;
-        }
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: center;
     }
 }
