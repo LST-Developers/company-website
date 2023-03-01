@@ -4,16 +4,21 @@ function Services() {
     
     return (
         <div className="containerServices">
-            <ReactPlayer className="video"
-                url="https://www.youtube.com/embed/gPgMltxn-N4"
-                playing
-                loop
-                muted
-                width="100%"
-                height="710px"
-            />
+            
 
-            <div></div>
+            <div className="containerVideo">
+                <ReactPlayer className="video"
+                    url="https://www.youtube.com/embed/gPgMltxn-N4"
+                    playing
+                    loop
+                    muted
+                    controls={0}
+                    width="100%"
+                    height="100%"
+                />
+                <div className="backgroundOverlay">
+                </div>
+            </div>
             <div className="content">
                 <div className="title">
                     <h2>NUESTROS SERVICIOS</h2>

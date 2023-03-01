@@ -1,20 +1,18 @@
-.slider{
-    text-align: center;
-    h5{
-        font-size: 1rem;
-        font-weight: 700;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-        color: #0c5adb;
+.slider {
+    margin: 2.5em 0;
+    .title {
+        text-align: center;
+
     }
 
-    h3{
-        font-size: 1.5rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
+    h3 {
+        font-size: $sectionTitleSize;
+        font-weight:$titleFontWeight;
+    }
+    h5 {
+        font-size: $sectionSubTitleSize;
+        font-weight: $sectionSubTitleWeight;
+        margin: 1em 0;
     }
 
-    .mySwiper{
-        margin-bottom: 2rem;
-    }
 }

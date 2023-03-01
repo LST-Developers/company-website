@@ -1,12 +1,48 @@
-.containerServices{
+.containerServices {
     position: relative;
-    
-   .video{
-        pointer-events: none;
-        //position: absolute;
-        height: 710px;
+
+    .containerVideo {
+        position: relative;
+        padding-top: 56.25%;
+        overflow: hidden;
+        .video {
+            pointer-events: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(1.18);
+        }
+        .backgroundOverlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #293742cc;
+            opacity: 0.8;
+        }
     }
-    .content{
-        display: none;
+
+    .content {
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        margin-top: 4em;
+        h2{
+            font-size: $sectionTitleSize;
+            font-weight:$titleFontWeight;
+        }
+        h5{
+            font-size: $sectionSubTitleSize;
+            margin: 1em 0;
+            font-weight: $sectionSubTitleWeight;
+        }
     }
 }
