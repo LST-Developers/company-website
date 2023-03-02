@@ -5,7 +5,8 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
     return (
-        <footer className="containerFooter">
+        <footer >
+            <div className="containerFooter">
                 <div className="infoContact">
                     <div className="findUs">
                         <span className="material-icons-outlined">
@@ -23,14 +24,13 @@ function Footer() {
                         <div>
                             <h4>Contáctanos</h4>
                             <p>+57 - 323-223-2323</p>
-                            <p>+57 - 323-223-2323</p>
                         </div>
                     </div>
                     <div className="findUs">
                         <span className="material-icons-outlined">mail</span>
                         <div>
                             <h4>Correo</h4>
-                            <p>usuario@loquesea</p>
+                            <p>usuario@ejemplo.com</p>
                         </div>
                     </div>
                 </div>
@@ -45,10 +45,7 @@ function Footer() {
                                 height="50"
                                 className="logo"
                             />
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Cumque animi nemo aspernatur
-                            </p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque animi nemo aspernatur</p>
                             <h4>Síguenos</h4>
                             <div className="iconRedes">
                                 <a
@@ -72,13 +69,13 @@ function Footer() {
                         <ul>
                             <li>
                                 <a className="linksUtil" href="#">Inicio</a>
-                            </li>
+                            </li><br />
                             <li>
                                 <a className="linksUtil" href="#">Servicios</a>
-                            </li>
+                            </li><br />
                             <li>
                                 <a className="linksUtil" href="#">Contactanos</a>
-                            </li>
+                            </li><br />
                             <li>
                                 <a className="linksUtil" href="#">Acerca De</a>
                             </li>
@@ -87,7 +84,7 @@ function Footer() {
                     <div className="subscribe">
                         <h4>Subscríbete</h4>
                         <hr className="shortLine" />
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, deleniti!</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.!</p>
                         <div className="containerEmail">
                             <input
                                 type="email"
@@ -98,18 +95,12 @@ function Footer() {
                             <a href=""><span className="material-icons-outlined">
                                 send
                             </span></a>
-                            
                         </div>
                     </div>
                 </div>
                 <div className="infoLegal">
-                    <p>
-                        Copyright © 2023 My Website CV y Robate algo para que
-                        veas
-                    </p>
-                    <a className="linksUtil" href="#">Política</a>
-                    
-                    <a className="linksUtil" href="#">Inicio</a>
+                    <p>Copyright © 2023 My Website Todos los derechos reservados. Hecho en [Santa Marta, Colombia].</p>
+                </div>
                 </div>
         </footer>
     );
