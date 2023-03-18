@@ -12,7 +12,7 @@ function Services() {
                     playing
                     loop
                     muted
-                    controls={0}
+                    controls={false}
                     width="100%"
                     height="100%"
                 />
