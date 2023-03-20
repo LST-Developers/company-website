@@ -1,139 +1,184 @@
-$colorprincipal: black;
+$color-bg-footer: linear-gradient(
+    to right,
+    #000814,
+    #00031c,
+    #000835,
+    #00031c,
+    #000814
+);
+
+$color-principal-title: white;
+$color-secundario: #8e8d8d;
+$color-icons: #4A95CF;
+$color-icon-instagram: rgb(228, 64, 95);
+$color-input-email: linear-gradient(to right, #404040, #404040, #404040);
+
+@mixin findUs {
+    display: flex;
+    align-items: center;
+    width: 40%;
+}
+@mixin findUs-span {
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: $color-icons;
+}
+@mixin witch-infoUsefuls{
+    width: 40%;
+}
+
+@mixin short-line {
+    width: 16%;
+    text-align: left;
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    //border-color: #e44b0eed;
+    border-color: $color-secundario;
+}
+
 footer {
-    background: linear-gradient(to right, black, #343434, #000000);
+    background: $color-bg-footer;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 
-    h4{
-        color: white; 
-        font-size: 1rem;
-    }
-    p{
-        font-size: 0.8rem;
-        color: #8e8d8d;
-    }
-
-    .longLine {
-        width: 71%;
-        margin-top: 1rem;
-        border-color: #0c5adb;
-    }
-
-    .infoContact {
-        display: flex;
-        justify-content: space-between;
+    .containerFooter {
         width: 70%;
-        text-align: left;
-        margin-top: 1%;
 
-        p{
-            margin-top: 4%;
-        }
-
-        .findUs {
+        .infoContact {
             display: flex;
-            align-items: center;
-        }
-
-        .findUs span {
-            margin-right: 1rem;
-            font-size: 2rem;
-            color: #0c5adb;
-        }
-    }
-
-    .infoUseful {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        text-align: left;
-        margin-top: 1%;
-
-
-        .subscribe{
-            width: 30%;
-            .containerEmail{
-                display: flex;
-                align-items: center;
-                margin-top: 2%;
-
-                span{
-                    color: #0c5adb;
-                    font-size: 2rem;
-                }
-            }
-            
-        }
-
-        .infogeneral {
-            width: 20%;
-        }
-
-        .logosRedes {
+            justify-content: space-between;
             width: 100%;
+            text-align: left;
+            margin-top: 1rem;
+
             p {
-                margin-top: 1rem;
-                margin-bottom: 1rem;
+                margin-top: 0.5rem;
             }
-            .iconRedes {
-                font-size: 2rem;
-                margin-top: 1rem;
 
-                a {
-                    margin-right: 1rem;
+            .findUs {
+                @include findUs();
+                span {
+                    @include findUs-span();
                 }
+            }
 
-                .iconFace {
-                    color: #0c5adb;
-                }
+            .contactUs {
+                @extend .findUs;
+            }
 
-                .iconInstagram {
-                    color: rgb(228, 64, 95);
-                }
+            .emailUs {
+                @extend .findUs;
             }
         }
 
-        .shortLine {
-            width: 40%;
-            text-align: left;
-            margin: 0;
+        .longLine {
+            width: 100%;
+            margin-top: 1rem;
+            border-color: $color-secundario;
+            margin-left: initial;
+        }
+
+        h4 {
+            color: $color-principal-title;
+            font-size: 1rem;
+        }
+        p {
+            font-size: 0.8rem;
+            color: $color-secundario;
+        }
+
+        .infoUseful {
+            @extend .infoContact;
+            .infogeneral {
+                @include witch-infoUsefuls();
+                img{
+                    width: 60%;
+                }
+                p {
+                    margin:  1rem 1rem 1rem 0;
+                }
+                .iconRedes {
+                    font-size: 2rem;
+                    margin-top: 1rem;
+                    a {
+                        margin-right: 1rem;
+                    }
+                    .iconFace {
+                        color: $color-icons;
+                    }
+                    .iconInstagram {
+                        color: $color-icon-instagram;
+                    }
+                }
+            }
+
+            .usefulLinks {
+                @include witch-infoUsefuls();
+                .linksUtil {
+                    text-decoration: none;
+                    color: $color-principal-title;
+                }
+                .shortLine{
+                    @include short-line();
+                }
+                
+            }
+
+            .subscribe {
+                @include witch-infoUsefuls();
+                
+                .containerEmail {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1rem;
+                    span {
+                        color: $color-icons;
+                        font-size: 2rem;
+                    }
+                }
+                .shortLine{
+                    @include short-line();
+                }
+                #email {
+                    background: $color-input-email;
+                    color: $color-principal-title;
+                    padding: 0.8rem;
+                    border: none;
+                    width: 100%;
+                }
+            }
+        }
+        .infoLegal {
+            width: 100%;
             margin-top: 1rem;
             margin-bottom: 1rem;
-           //border-color: #e44b0eed;
-            border-color: #0c5adb;
+            text-align: center;
         }
-
-        #email {
-            background: linear-gradient(to right, #404040, #404040, #404040);
-            color: white;
-            padding: 0.8rem;
-            border: none;
-            width: 65%;
-        }
-
-        .usefulLinks{
-            .linksUtil{
-                text-decoration: none;
-                color: white;
-            }
-
-        }
-        
     }
-
+}
+@media only screen and (max-width: 768px) {
+    .infoContact {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+        gap: 1rem;
+    }
+    .longLine {
+        display: none;
+    }
+    .shortLine{
+        display: none;
+    }
+    .infoUseful {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
     .infoLegal {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-        text-align: left;
-        margin-top: 1%;
-        margin-bottom: 1%;
-        
-        .linksUtil{
-            text-decoration: none;
-            color: white;
-        }
+        flex-direction: column;
+        text-align: center;
     }
 }
