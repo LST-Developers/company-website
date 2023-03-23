@@ -56,14 +56,16 @@ function Footer() {
                         <h4>Síguenos</h4>
                         <div className="iconRedes">
                             <a
-                                href="DiderccionDeFacebookDeLaEmpresa"
+                                href="https://www.facebook.com/profile.php?id=100071805672152"
                                 className="iconFace"
+                                target="_blank"
                             >
                                 <FontAwesomeIcon icon={faFacebook} />
                             </a>
                             <a
-                                href="DiderccionDeInstagramDeLaEmpresa"
+                                href="https://www.instagram.com/lstech_company/"
                                 className="iconInstagram"
+                                target="_blank"
                             >
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
