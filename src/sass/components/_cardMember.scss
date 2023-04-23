@@ -1,0 +1,51 @@
+.card{
+    .top{
+        position: relative;
+        img{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 300px;
+            width: 100%;
+            border-radius: 0%;
+        }
+        .social-links{
+            padding: 0.8em;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(0%);
+            background-color: blue;
+            width: 80%;
+            margin-bottom: 3px;
+            opacity: 0;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+            a{
+                color: white;
+                font-size: 1rem;
+                padding: 1rem;
+            }
+        }
+
+    }
+    .top:hover{
+        .social-links{
+            transform: translateX(-50%) translateY(0%);
+            opacity: 1;
+        }
+    }
+    
+    .bottom{
+        padding: 1em;
+        h3{
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5em;
+        }
+        p{
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0.5em;
+        }
+    }
+}
